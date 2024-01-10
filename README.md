@@ -22,21 +22,34 @@ This repository contains geospatial data for various administrative divisions of
 
 
 #### Example Usage (Python)
+Configure virtual environment:
+```bash
+virtualenv .venv
+source .venv/bin/activate
 ```
+Install Dependencies:
+```bash
 pip install matplotlib geopandas
 ```
-
-
+Code:
 ```python
 import geopandas as gpd
+import matplotlib.pyplot as plt
+import subprocess
 
-# Load administrative boundaries data
-admin_boundaries = gpd.read_file('nepal.geojson')
+FILE_PATH = './nepal.geojson'
 
-# Plot the data
-admin_boundaries.plot()
+admin_boundaries = gpd.read_file(FILE_PATH)
+ax = admin_boundaries.plot()
+plt.savefig('output_plot.png', format='png')
+subprocess.run(['xdg-open', 'output_plot.png'])
 ```
-
+Run the program:
+```bash
+python map-of-nepal.py
+```
+Output image:
+![output_plot](https://github.com/opentechcommunity/map-of-nepal/assets/10881526/08b88631-9c67-4c1c-9cf8-a3058c6e8da5)
 
 ## License
 This geospatial data is provided under the  [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Please review the license before using the data.
