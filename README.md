@@ -22,16 +22,16 @@ This repository contains geospatial data for various administrative divisions of
 
 
 #### Example Usage (Python)
-Configure virtual environment:
+##### Configure and activate virtual environment:
 ```bash
 virtualenv .venv
 source .venv/bin/activate
 ```
-Install Dependencies:
+##### Install Dependencies:
 ```bash
 pip install matplotlib geopandas
 ```
-Code:
+##### Code:
 ```python
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -44,12 +44,11 @@ ax = admin_boundaries.plot()
 plt.savefig('output_plot.png', format='png')
 subprocess.run(['xdg-open', 'output_plot.png'])
 ```
-Run the program:
+##### Run the program:
 ```bash
 python map-of-nepal.py
 ```
-Output image:
-
+##### Output image:
 ![output_plot](https://github.com/opentechcommunity/map-of-nepal/assets/10881526/08b88631-9c67-4c1c-9cf8-a3058c6e8da5)
 
 ## License
