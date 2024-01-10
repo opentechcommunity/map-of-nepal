@@ -49,6 +49,7 @@ Run the program:
 python map-of-nepal.py
 ```
 Output image:
+
 ![output_plot](https://github.com/opentechcommunity/map-of-nepal/assets/10881526/08b88631-9c67-4c1c-9cf8-a3058c6e8da5)
 
 ## License
