@@ -22,6 +22,10 @@ This repository contains geospatial data for various administrative divisions of
 
 
 #### Example Usage (Python)
+```
+pip install matplotlib geopandas
+```
+
 
 ```python
 import geopandas as gpd
