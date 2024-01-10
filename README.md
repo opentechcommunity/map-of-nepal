@@ -21,7 +21,7 @@ This repository contains geospatial data for various administrative divisions of
 - Use the GeoJSON files in your mapping and GIS projects.
 
 
-#### Example Usage
+#### Example Usage (Python)
 
 ```python
 import geopandas as gpd
