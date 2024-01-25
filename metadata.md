@@ -5,6 +5,11 @@
 
 This repository contains geospatial data for various administrative divisions of Nepal in GeoJSON format. The data is organized into directories based on provinces, districts, and municipalities. The information is intended for use in mapping and geographic information system (GIS) projects related to Nepal.
 
+## Data Source
+
+The geospatial data in this repository has been sourced from authoritative government datasets, including 
+[MOFAGA](https://www.mofaga.gov.np/). The datasets were collected and processed to provide accurate and up-to-date information.
+
 ## Data Structure
 
 -   **maps-of-districts:** GeoJSON files representing the geographical boundaries of districts within various provinces of Nepal.
